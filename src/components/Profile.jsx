@@ -1,7 +1,8 @@
+import s from './Profile.module.css';
 import Nature from './Nature.jpg';
 const Profile = () => {
     return(
-        <div className='content'>
+        <div className={s.content}>
             <div>
                 <img src={Nature} alt='' />
             </div>
@@ -13,11 +14,11 @@ const Profile = () => {
                 <div>
                     New Posts
                 </div>
-                <div>
-                    <div>
+                <div className={s.posts}>
+                    <div className={s.item}>
                         post 1
                     </div>
-                    <div>
+                    <div className='item'>
                         post 2
                     </div>
                 </div>

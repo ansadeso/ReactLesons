@@ -1,4 +1,4 @@
-import s from './Dialogs.module.css';
+import './Dialogs.module.css';
 
 const Dialogs = () => {
     return(

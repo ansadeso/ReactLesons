@@ -1,4 +1,4 @@
-import s from './Profile.module.css';
+import './Profile.module.css';
 import Nature from './Nature.jpg';
 import MyPosts from './MyPosts/MyPosts';
 const Profile = () => {

@@ -1,15 +1,11 @@
 import './Profile.module.css';
-import Nature from './Nature.jpg';
+
 import MyPosts from './MyPosts/MyPosts';
+import ProfileInfo from './ProfileInfo/ProfileInfo.jsx'
 const Profile = () => {
     return(
         <div >
-            <div>
-                <img src={Nature} alt='' />
-            </div>
-            <div>
-                ava + description
-            </div>
+            <ProfileInfo />
             <MyPosts />
 
         </div>

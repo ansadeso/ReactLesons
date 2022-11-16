@@ -6,7 +6,7 @@ import Dialogs from './components/Dialogs/Dialogs.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
-const App = () => {
+const App = (props) => {
 
   return (
    <BrowserRouter>
@@ -16,7 +16,7 @@ const App = () => {
             <Header />
             <Navbar />
             <div className='app-wrapper-content'>              
-              <Profile />
+              <Profile posts={props.posts} />
             </div>
           </div>
         } />
@@ -25,7 +25,7 @@ const App = () => {
             <Header />
             <Navbar />
             <div className='app-wrapper-content'>
-              <Profile />
+              <Profile posts={props.posts} />
             </div>
           </div>
         } />
@@ -35,7 +35,7 @@ const App = () => {
             <Header />
             <Navbar />
             <div className='app-wrapper-content'>
-              <Dialogs />
+              <Dialogs dialogs={props.dialogs} messages={props.messages} />
             </div>
           </div>
         } />

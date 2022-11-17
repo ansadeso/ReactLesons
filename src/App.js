@@ -3,13 +3,13 @@ import Header from './components/Header/Header.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Profile from './components/Profile/Profile.jsx';
 import Dialogs from './components/Dialogs/Dialogs.jsx';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 
 
 const App = (props) => {
 
   return (
-   <BrowserRouter>
+   
    <Routes>
         <Route path='/' element={
           <div className='app-wrapper'>
@@ -52,7 +52,7 @@ const App = (props) => {
         </div>
       </div> */}
       </Routes>
-      </BrowserRouter>
+    
   );
 }
 

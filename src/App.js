@@ -16,7 +16,7 @@ const App = (props) => {
             <Header />
             <Navbar />
             <div className='app-wrapper-content'>              
-              <Profile posts={props.posts} />
+              <Profile posts={props.state.profilePage.posts} />
             </div>
           </div>
         } />
@@ -25,7 +25,7 @@ const App = (props) => {
             <Header />
             <Navbar />
             <div className='app-wrapper-content'>
-              <Profile posts={props.posts} />
+              <Profile posts={props.state.profilePage.posts} />
             </div>
           </div>
         } />
@@ -35,7 +35,7 @@ const App = (props) => {
             <Header />
             <Navbar />
             <div className='app-wrapper-content'>
-              <Dialogs dialogs={props.dialogs} messages={props.messages} />
+              <Dialogs dialogs={props.state.dialogsPage.dialogs} messages={props.state.dialogsPage.messages} />
             </div>
           </div>
         } />
